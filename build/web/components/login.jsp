@@ -1,5 +1,4 @@
-<%-- Document : index.jsp Created on : 24 thg 5, 2024, 07:44:15 Author :
-longle2507 --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,68 +14,51 @@ longle2507 --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>PShop</title>
+    <title>PShop Login</title>
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up">
-        <!-- Form - Register -->
-        <form>
-          <h1>Create Account</h1>
-          <div class="social-icons">
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+    <div>
+      <button onclick="myFunction()" class="let-go">Let's go</button>
+    </div>
+    <div class="login-page">
+      <div class="form-login sign-in">
+        <form method="post">
+          <div class="wrapper-input">
+            <input type="email" placeholder="Enter Email" />
+            <input type="password" placeholder="Enter Password" />
           </div>
-          <span>or use your email for registeration</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <div class="social-login">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+          </div>
+          <div class="submit-forget">
+            <button class="btn-login">Sign In</button>
+            <a href="#" id="show-register">Sign Up</a>
+            <a href="#">Forget Your Password?</a>
+          </div>
         </form>
-      </div>
-      <div class="form-container sign-in">
-        <!-- Form - Login -->
-        <form>
-          <h1>Sign In</h1>
-          <div class="social-icons">
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </div>
-          <span>or use your email password</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forget Your Password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="toggle-container">
-        <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1>Welcome Back to PetShop!</h1>
-            <p>Enter your personal details to use all of site features</p>
-            <button class="hidden" id="login">Sign In</button>
-          </div>
-          <div class="toggle-panel toggle-right">
-            <h1>Hello, Friend!</h1>
-            <p>
-              Register with your personal details to use all of site features
-            </p>
-            <button class="hidden" id="register">Sign Up</button>
-          </div>
-        </div>
       </div>
     </div>
+    <div class="register-page">
+      <div class="form-login sign-up">
+        <form method="post">
+          <div class="wrapper-input">
+            <input type="text" placeholder="Enter Name" />
+            <input type="email" placeholder="Enter Email" />
+            <input type="password" placeholder="Enter Password" />
+          </div>
+          <div class="social-login">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+          </div>
+          <div class="submit-forget">
+            <button class="btn-login">Sign Up</button>
+            <a href="#" id="show-login">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="../assets/js/login.js"></script>
   </body>
 </html>

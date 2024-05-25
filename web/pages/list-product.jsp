@@ -56,7 +56,7 @@ longle2507 --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
             <a href="#freeLance" class="nav-item text-uppercase"
               >freelance[for her]</a
             >
-            <a href="./list-product.jsp" class="nav-item text-uppercase"
+            <a href="../pages/list-product.jsp" class="nav-item text-uppercase"
               >store</a
             >
           </div>
