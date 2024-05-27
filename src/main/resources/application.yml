@@ -1,0 +1,16 @@
+#spring:
+#  application:
+#    name: "spring-boot-social-login"
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: YOUR_GOOGLE_CLIENT_ID
+#            client-secret: YOUR_GOOGLE_CLIENT_SECRET
+#            scope: profile, email
+#          facebook:
+#            client-id: 1710158906058386
+#            client-secret: 9f76f9a20e4c9bf31e455b6c5b1303f3
+#            scope: email, public_profile
+#
