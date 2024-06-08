@@ -17,22 +17,39 @@ body {
   margin: 0;
 }
 
-.let-go{
+.let-go {
+  position: absolute;
+  text-align: center;
   border: none;
   border-radius: 20px;
   padding: 10px 15px;
   transition: all 0.5s ease-in-out;
+  animation: let-go-ani 2s ease-in-out forwards;
 }
 
-.let-go:hover{
+.let-go:hover {
   background-color: #ffdb5c;
   color: #456bd9;
   padding: 20px 40px;
 }
 
-.login-page,
+@keyframes let-go-ani {
+  0% {
+    top: -50%;
+    left: 50%;
+    background-color: #000;
+    color: #fff;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    background-color: #ffdb5c;
+    color: #456bd9;
+  }
+}
+
 .register-page {
-  display: none; 
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -41,12 +58,55 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: regis-ani 1s ease-in-out forwards;
 }
 
-
-.login-page.active,
+.login-page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: login-ani 1s ease-in-out forwards;
+}
 .register-page.active {
   display: flex;
+}
+
+.login-page.active {
+  display: flex;
+}
+
+@keyframes regis-ani {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes login-ani {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .form-login {

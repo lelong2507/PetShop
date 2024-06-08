@@ -1,3 +1,14 @@
+// change title 
+let docTitle = document.title;
+console.log(docTitle);
+window.addEventListener("blur", () => {
+  document.title = "Come back ☹️";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
 // index-part-even
 const searchIcon = document.getElementById("search-icon");
 

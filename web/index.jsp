@@ -15,6 +15,7 @@ longle2507 --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="./assets/images/intro-begin/intro.jpg" />
     <title>PShop</title>
   </head>
   <body>

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.app-header .container {
+  max-width: 100%;
+  background-color: #456bd9;
+  color: #ffdb5c;
+  height: 100px;
+}
+
+.wrapper-infor .img-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.wrapper-infor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-infor .name-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-user .widget-subheading {
+  color: #ccc;
+  font-size: medium;
+}
+
+.welcome-part .container {
+  max-width: 100%;
+  background: linear-gradient(to right, #5273d7, #0640ee);
+  height: 500px;
+}
+.welcome-part .btn-edit-profile button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #456bd9;
+  color: #ffdb5c;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.welcome-part .btn-edit-profile button:hover {
+  padding: 15px 25px;
+  background-color: #ffdb5c;
+  color: #456bd9;
+}
+
+.main-content {
+  padding-top: 150px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.main-content .name-user{
+    padding-bottom: 10px;
+}
+
+.main-content .intro-section{
+    width: 500px;
+    height: auto;
+    padding-bottom: 10px;
+}

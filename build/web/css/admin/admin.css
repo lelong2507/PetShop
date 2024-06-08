@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.app-header .container {
+  max-width: 100%;
+  display: flex;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  cursor: pointer;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo-text {
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.header-left .wrapper-search {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header-left .wrapper-search input {
+  border: none;
+  border-radius: 50px 0 0 50px;
+  padding: 10px 20px;
+  background-color: #ffdb5c;
+  color: #234bbb;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  width: 200px;
+}
+
+.header-left .wrapper-search input:hover {
+  background-color: #3467f3;
+}
+
+.header-left .wrapper-search button {
+  border-radius: 0 50px 50px 0;
+  border: none;
+  padding: 10px 20px;
+  background-color: #234bbb;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.header-left .wrapper-search button:hover {
+  color: #ffdb5c;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .img-admin img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.img-admin {
+  display: flex;
+  align-items: center;
+}
+
+.img-admin a {
+  display: flex;
+  align-items: center;
+}
+
+.img-admin img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.dropdown-item {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.btn-edit {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #007bff;
+  color: #ffdb5c;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.navbarDropdown .btn-edit {
+  background-color: #ffdb5c;
+  color: #234bbb;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.navbarDropdown .btn-edit:hover {
+  background-color: #234bbb;
+  color: #ffdb5c;
+}
+
+.name-role {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-widget a {
+  color: #000;
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
+
+.widget-subheading {
+  color: #ccc;
+}
+
+.system {
+  background-color: #3467f3;
+}
+
+.system-content {
+  padding: 20px 30px;
+}
+.system-content a {
+  text-decoration: none;
+  color: white;
+}
+.system-content a:hover {
+  color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  left: -280px;
+  max-width: 40%;
+  background-color: #3467f3;
+  border-radius: 0 50px 50px 0;
+  margin-top: 20px;
+  transition: all 0.5s ease-in;
+}
+
+.navbar.show {
+  transition: all 0.5s ease-in;
+  left: 0;
+}
+
+.navbar .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .text-heading {
+  margin-bottom: 10px;
+}
+
+.navbar .menu-content {
+  margin-left: 20px;
+}
+
+.navbar .menu-content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .menu-content a i {
+  margin-right: 20px;
+}
+
+.user-list {
+  max-width: 60%;
+  background-color: #0056b3;
+}
