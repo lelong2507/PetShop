@@ -1,5 +1,7 @@
+<%-- Document : profile-main.jsp Created on : 8 thg 6, 2024, 16:07:09 Author :
+longle2507 --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +24,10 @@
           class="wrapper-infor d-flex align-items-center justify-content-between"
         >
           <div class="img-user me-3">
-            <img src="../../assets/images/for-admin/we.jpg" alt="User Image" />
+            <img
+              src="../../assets/images/intro-begin/intro.jpg"
+              alt="User Image"
+            />
           </div>
           <div class="name-user d-flex flex-column">
             <div class="widget-heading">LongBuaDinh</div>
@@ -59,7 +64,10 @@
       <div class="container">
         <div class="card-information p-4">
           <div class="img-user text-center mb-4">
-            <img src="../../assets/images/for-admin/we.jpg" alt="User Image" />
+            <img
+              src="../../assets/images/intro-begin/intro.jpg"
+              alt="User Image"
+            />
           </div>
           <div class="wrapper-input">
             <div class="input-content mb-3">
@@ -119,7 +127,7 @@
           <div class="col-md-3 text-center d-flex justify-content-between">
             <a
               ><img
-                src="./assets/images/social-icon/facebook_e3e340acee344ebd8bb196d37d0cef87.webp"
+                src="../../assets/images/social-icon/facebook_e3e340acee344ebd8bb196d37d0cef87.webp"
                 class="img-fluid"
                 alt=""
                 width="30"
@@ -127,7 +135,7 @@
             /></a>
             <a
               ><img
-                src="./assets/images/social-icon/momo_logo_63183e1975424c0aade4b84e605ae0a2.webp"
+                src="../../assets/images/social-icon/momo_logo_63183e1975424c0aade4b84e605ae0a2.webp"
                 class="img-fluid"
                 alt=""
                 width="30"
@@ -135,7 +143,7 @@
             /></a>
             <a
               ><img
-                src="./assets/images/social-icon/shoppe-pay.webp"
+                src="../../assets/images/social-icon/shoppe-pay.webp"
                 class="img-fluid"
                 alt=""
                 width="30"
@@ -143,7 +151,7 @@
             /></a>
             <a
               ><img
-                src="./assets/images/social-icon/vnp_322d4deedfa64e64a03900c8341c0317.webp"
+                src="../../assets/social-icon/vnp_322d4deedfa64e64a03900c8341c0317.webp"
                 class="img-fluid"
                 alt=""
                 width="30"
@@ -159,6 +167,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
