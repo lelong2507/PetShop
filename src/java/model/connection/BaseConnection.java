@@ -1,4 +1,4 @@
-package java.model.connection;
+package model.connection;
 
 // Đây là chỗ đễ đổi qua CSDL của anh em nghe
 public interface BaseConnection {

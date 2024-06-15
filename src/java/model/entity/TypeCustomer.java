@@ -1,4 +1,4 @@
-package java.model.entity;
+package model.entity;
 
 public class TypeCustomer {
     private int typeCustomerId;

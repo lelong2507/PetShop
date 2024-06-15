@@ -11,10 +11,10 @@ CREATE TABLE typecustomer (
 CREATE TABLE customer (
     customerId INT  identity(1,1) PRIMARY KEY,
     customerName VARCHAR(255) NOT NULL,
-    customerDob VARCHAR(255) NOT NULL,
+    customerDob DATE NOT NULL,
     username VARCHAR(255) NOT NULL UNIQUE,
     password_ VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL,
     phoneNumber VARCHAR(20) NOT NULL,
     address_ VARCHAR(255),
     img_ava VARCHAR(255),
@@ -22,6 +22,10 @@ CREATE TABLE customer (
     typecustomerId INT,
     FOREIGN KEY (typecustomerId) REFERENCES typecustomer(typecustomerId),
 );
+
+
+
+
 
 -- Table for roles
 CREATE TABLE role (
@@ -33,16 +37,17 @@ CREATE TABLE role (
 CREATE TABLE employee (
     employeeId INT PRIMARY KEY,
     employeeName VARCHAR(255) NOT NULL,
-    employeeDob VARCHAR(255) NOT NULL,
+    employeeDob DATE NOT NULL,
     username VARCHAR(255) NOT NULL UNIQUE,
     password_ VARCHAR(255) NOT NULL,
     phoneNumber VARCHAR(20) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL,
     img_ava VARCHAR(255),
     description_ TEXT,
     roleId INT,
     FOREIGN KEY (roleId) REFERENCES role(roleId)
 );
+
 
 -- Table for product types
 CREATE TABLE typeProduct (
@@ -55,7 +60,7 @@ CREATE TABLE typeProduct (
 CREATE TABLE size (
     sizeId INT  identity(1,1) PRIMARY KEY,
     sizeName VARCHAR(255) NOT NULL,
-    weight_ VARCHAR(255)
+    weight_ DECIMAL(5,2)
 );
 
 -- Table for trademarks
@@ -147,3 +152,41 @@ CREATE TABLE rating (
 );
 
 
+SELECT * FROM customer;
+
+insert into typecustomer(typecustomerName) 
+VALUES  ('Thanh Vien Dong'),
+('Thanh Vien Bac'),
+('Thanh Vien Vang'),
+('Thanh Vien Kim Cuong');
+
+select * from  typecustomer AS tc 
+inner join customer as c on tc.typecustomerId = c.typecustomerId;
+
+SELECT * FROM customer where username = 'long' and password_ = '123';
+
+INSERT INTO customer (
+    customerName,
+    customerDob,
+    username,
+    password_,
+    email,
+    phoneNumber,
+    address_,
+    img_ava,
+    description_C,
+    typecustomerId
+) VALUES (
+    'Huy Loc',              -- Replace with the actual customer name
+    '1990-01-01',              -- Replace with the actual date of birth
+    'huyloc',               -- Replace with the actual username
+    'securepassword',          -- Replace with the actual password (ensure it's securely hashed)
+    'lehuyloc3898@gmail.com',
+    '123456789',               -- Replace with the actual phone number
+    '123 Main St',             -- Replace with the actual address
+    'avatar.jpg',              -- Replace with the actual image avatar file name
+    'Description of Huy Loc', -- Replace with the actual description
+    1                          -- Replace with the actual typecustomerId
+);
+
+select * from customer

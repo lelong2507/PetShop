@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/pages/pet-page/dog-page.jsp</file>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/pages/list/list-product.jsp</file>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/pages/profile/profile-main.jsp</file>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/assets/js/index.js</file>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/components/login.jsp</file>
-            <file>file:/Users/longle2507/Documents/hello/PetShop/web/css/components/login.css</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/src/java/model/utils/PShopQuery.java</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/web/WEB-INF/web.xml</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/web/index.jsp</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/src/java/model/dao/CustomerDAO.java</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/src/java/controller/LoginServlet.java</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/src/java/controller/CustomerServlet.java</file>
+            <file>file:/Users/longle2507/Documents/hello/PetShop/src/java/model/entity/Email.java</file>
         </group>
     </open-files>
 </project-private>

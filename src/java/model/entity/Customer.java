@@ -1,4 +1,4 @@
-package java.model.entity;
+package model.entity;
 
 import java.util.Date;
 
@@ -15,19 +15,17 @@ public class Customer {
     private String description;
     private int typeCustomerId;
 
-    public Customer(int customerId, String customerName, Date customerDob, String userName, String passWord,
-            String email, String phoneNumber, String address, String img_ava, String description, int typeCustomerId) {
-        this.customerId = customerId;
+    public Customer(String customerName, String userName, String passWord) {
         this.customerName = customerName;
-        this.customerDob = customerDob;
         this.userName = userName;
         this.passWord = passWord;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
-        this.img_ava = img_ava;
-        this.description = description;
-        this.typeCustomerId = typeCustomerId;
+        this.customerDob = new java.sql.Date(System.currentTimeMillis()); 
+        this.email = "Your Email"; 
+        this.phoneNumber = "Your PhoneNumber"; 
+        this.address = "YourAddress"; 
+        this.img_ava = "Your Ava"; 
+        this.description = "About You"; 
+        this.typeCustomerId = 1; 
     }
 
     public Customer() {
